@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.MuiFormControl-root.row,
+.row {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.button-row {
+  justify-content: space-around;
+}
+
+.container {
+  display: flex;
+  width: 80%;
+  margin: 30px auto;
+}
+
+.token-container {
+  flex-grow: 3;
+}
+
+form {
+  flex-grow: 1;
+}
+
+.MuiInputBase-formControl {
+  margin: 0px !important;
+}
+
+.token-row {
+  display: flex;
+}
+
+.token-content {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  text-align: center;
+  align-content: center;
+  margin: 5px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.blue {
+  background: blue;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.red {
+  background: red;
 }
